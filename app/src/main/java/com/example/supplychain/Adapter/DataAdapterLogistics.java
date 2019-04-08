@@ -14,7 +14,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.supplychain.Activity.LogisticsDeliver;
 import com.example.supplychain.Activity.LogisticsHome;
 import com.example.supplychain.Activity.LogisticsPickup;
