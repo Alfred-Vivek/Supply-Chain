@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">SupplyChain</string>
+    <string name="title_activity_tpw_login">TPW Login</string>
+    <string name="title_activity_login">Login to Account</string>
+    <string name="title_activity_tpw_home">TPW Home</string>
+    <string name="bol"><u>Bol Copy</u></string>
+    <string name="pd"><u>Packing Details</u></string>
+    <string name="title_activity_logistics_home">Logistics Home</string>
+    <string name="title_activity_logistics_pickup">Logistics Pickup</string>
+    <string name="title_activity_logistics_deliver">Logistics Deliver</string>
+    <string name="title_activity_dealer_login">Dealer Login</string>
+    <string name="title_activity_dealer_dash">DealerDash</string>
+    <string name="title_activity_shipment_track">ShipmentTrack</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string-array name="dropdown_vendor">
+        <item>Vendor Name</item>
+        <item>Drop Down List 1</item>
+        <item>Drop Down List 2</item>
+        <item>Drop Down List 3</item>
+    </string-array>
+    <string-array name="dropdown_item">
+        <item>Item Name</item>
+        <item>Drop Down List 1</item>
+        <item>Drop Down List 2</item>
+        <item>Drop Down List 3</item>
+    </string-array>
+    <string-array name="dropdown_po">
+        <item>PO No.</item>
+        <item>Drop Down List 1</item>
+        <item>Drop Down List 2</item>
+        <item>Drop Down List 3</item>
+    </string-array>
+    <string-array name="dropdown_status">
+        <item>Status</item>
+        <item>Drop Down List 1</item>
+        <item>Drop Down List 2</item>
+        <item>Drop Down List 3</item>
+    </string-array>
+    <string-array name="dropdown_needby">
+        <item>Need By</item>
+        <item>Drop Down List 1</item>
+        <item>Drop Down List 2</item>
+        <item>Drop Down List 3</item>
+    </string-array>
+</resources>

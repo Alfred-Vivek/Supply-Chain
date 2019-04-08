@@ -1,0 +1,294 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:2:1-86:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\c827dbdd9094239028ffb36666892ac5\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.vipulasri:timelineview:1.0.3] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\timelineview-1.0.3.aar\84e09154c7c5877595177ba9328f521a\AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\8530b01908c576af5b54c0214ea67c9f\AndroidManifest.xml:17:1-22:12
+MERGED from [devs.mulham.horizontalcalendar:horizontalcalendar:1.3.4] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\horizontalcalendar-1.3.4.aar\a02738759434e166599b55f426c617de\AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\2ba436db3519bb91c0af62cf616ea9b2\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\8f9c03f06825112f1e10ee0244cae221\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\d71e7209ca4a088b1870049be2755efd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\ec84b431daa2cbbab09254f845492d60\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0-alpha] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\MPAndroidChart-v3.1.0-alpha.aar\5b4b1cfbf235150b1aa010c805debb2f\AndroidManifest.xml:2:1-20:12
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\a8978aa22c5aa2cef644242b38b89824\AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\0dd9f3c1f14649ba8fdaa2a68b3f72fa\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\8c914e816083d0acbb01b9c72ca87fe1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\46aa9d0136a605f409393305270a2667\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\9287e017ce05621869d321a8369f24eb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\12a75f0ce4babb95d92d960fcd130fbe\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\5de08263c87915fc10fc0927b9b355a0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\56c63aa475dcd5f71552ac45b0a4f274\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\c2231b55e52a7bf97beeedb2ddaf9489\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\0528e21901300e2d071dc9a1b5252e5f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\ca76ef6f6168cd70cb6fef265582ef0a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\b5c42d3db2201a2c4b3cc9523b009cf0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\73ced9bcc8627d68e650742de7ff73fe\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\0e0165e7da7cd1804fe77bfd28f40ab7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\77f284ba9c0f670d4304ff385bc37ffa\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\2982d5585562e892e10b3855d14dd628\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\917b24c92840eb743096f7e090005cd7\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\6738eae72f1dc94b8e8866386e8cdffd\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\bbaccb682468061599493483eb7f4e65\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0d50f1f8a50706ec3acd190f62b185aa\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\277f90f21a1432b2442c94a20e3227a3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\4b59a3edd9d3ed712dbcc786c2337c33\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\3b5ea31720be4019c2432d4a5ffcc12b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\bfb3bcdbcfcfa368054a53fa53187454\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\c6a2aae186670cc7f2aadf11e94ba138\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\b795d03f7a6b9491a662c3a6cd86e345\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\1d396be06f8d43f6ff371771f6881ed2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\e3ce58c0aa09d77b544f420200e8d13e\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:2:1-86:12
+	package
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:2:1-86:12
+		INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:2:1-86:12
+		INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:4:5-66
+	android:name
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:5:5-78
+	android:name
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:5:22-76
+application
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:7:5-84:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\c827dbdd9094239028ffb36666892ac5\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\c827dbdd9094239028ffb36666892ac5\AndroidManifest.xml:22:5-20
+MERGED from [com.github.vipulasri:timelineview:1.0.3] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\timelineview-1.0.3.aar\84e09154c7c5877595177ba9328f521a\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.vipulasri:timelineview:1.0.3] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\timelineview-1.0.3.aar\84e09154c7c5877595177ba9328f521a\AndroidManifest.xml:11:5-15:19
+MERGED from [devs.mulham.horizontalcalendar:horizontalcalendar:1.3.4] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\horizontalcalendar-1.3.4.aar\a02738759434e166599b55f426c617de\AndroidManifest.xml:11:5-12:19
+MERGED from [devs.mulham.horizontalcalendar:horizontalcalendar:1.3.4] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\horizontalcalendar-1.3.4.aar\a02738759434e166599b55f426c617de\AndroidManifest.xml:11:5-12:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\2ba436db3519bb91c0af62cf616ea9b2\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\2ba436db3519bb91c0af62cf616ea9b2\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\917b24c92840eb743096f7e090005cd7\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\917b24c92840eb743096f7e090005cd7\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\6738eae72f1dc94b8e8866386e8cdffd\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\6738eae72f1dc94b8e8866386e8cdffd\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\917b24c92840eb743096f7e090005cd7\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from [com.github.vipulasri:timelineview:1.0.3] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\timelineview-1.0.3.aar\84e09154c7c5877595177ba9328f521a\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:10:9-41
+	android:roundIcon
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:12:9-40
+	android:networkSecurityConfig
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:13:9-60
+activity#com.example.supplychain.Activity.SplashScreen
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:15:9-23:20
+	android:screenOrientation
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:17:13-49
+	android:theme
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:18:13-56
+	android:name
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:16:13-50
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:19:13-22:29
+action#android.intent.action.MAIN
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:21:27-74
+activity#com.example.supplychain.Activity.LoginActivity
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:25:9-29:20
+	android:screenOrientation
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:27:13-49
+	android:theme
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:28:13-56
+	android:name
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:26:13-51
+activity#com.example.supplychain.Activity.LogisticsHome
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:31:9-36:20
+	android:screenOrientation
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:34:13-49
+	android:label
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:33:13-66
+	android:theme
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:35:13-56
+	android:name
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:32:13-51
+activity#com.example.supplychain.Activity.TpwHome
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:38:9-43:20
+	android:screenOrientation
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:41:13-49
+	android:label
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:40:13-60
+	android:theme
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:42:13-56
+	android:name
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:39:13-45
+activity#com.example.supplychain.Activity.LogisticsDeliver
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:45:9-50:20
+	android:screenOrientation
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:48:13-49
+	android:label
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:47:13-69
+	android:theme
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:49:13-56
+	android:name
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:46:13-54
+activity#com.example.supplychain.Activity.LogisticsPickup
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:52:9-57:20
+	android:screenOrientation
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:55:13-49
+	android:label
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:54:13-68
+	android:theme
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:56:13-56
+	android:name
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:53:13-53
+activity#com.example.supplychain.Activity.PackagingDetails
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:59:9-63:59
+	android:screenOrientation
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:62:13-49
+	android:label
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:61:13-44
+	android:theme
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:63:13-56
+	android:name
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:60:13-54
+activity#com.example.supplychain.Activity.ShipmentTrack
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:65:9-68:58
+	android:label
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:67:13-66
+	android:theme
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:68:13-56
+	android:name
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:66:13-51
+activity#com.example.supplychain.Activity.DealerDash
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:70:9-73:54
+	android:label
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:72:13-63
+	android:theme
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:73:13-51
+	android:name
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:71:13-48
+activity#com.example.supplychain.Activity.ShipmentDetails
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:75:9-78:59
+	android:screenOrientation
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:77:13-49
+	android:theme
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:78:13-56
+	android:name
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:76:13-53
+activity#com.example.supplychain.Activity.AwbTrack
+ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:80:9-83:59
+	android:screenOrientation
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:82:13-49
+	android:theme
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:83:13-56
+	android:name
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml:81:13-46
+uses-sdk
+INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml
+INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\c827dbdd9094239028ffb36666892ac5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\c827dbdd9094239028ffb36666892ac5\AndroidManifest.xml:20:5-44
+MERGED from [com.github.vipulasri:timelineview:1.0.3] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\timelineview-1.0.3.aar\84e09154c7c5877595177ba9328f521a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.vipulasri:timelineview:1.0.3] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\timelineview-1.0.3.aar\84e09154c7c5877595177ba9328f521a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\8530b01908c576af5b54c0214ea67c9f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\8530b01908c576af5b54c0214ea67c9f\AndroidManifest.xml:20:5-44
+MERGED from [devs.mulham.horizontalcalendar:horizontalcalendar:1.3.4] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\horizontalcalendar-1.3.4.aar\a02738759434e166599b55f426c617de\AndroidManifest.xml:7:5-9:41
+MERGED from [devs.mulham.horizontalcalendar:horizontalcalendar:1.3.4] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\horizontalcalendar-1.3.4.aar\a02738759434e166599b55f426c617de\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\2ba436db3519bb91c0af62cf616ea9b2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\2ba436db3519bb91c0af62cf616ea9b2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\8f9c03f06825112f1e10ee0244cae221\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\8f9c03f06825112f1e10ee0244cae221\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\d71e7209ca4a088b1870049be2755efd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\d71e7209ca4a088b1870049be2755efd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\ec84b431daa2cbbab09254f845492d60\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\ec84b431daa2cbbab09254f845492d60\AndroidManifest.xml:20:5-44
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0-alpha] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\MPAndroidChart-v3.1.0-alpha.aar\5b4b1cfbf235150b1aa010c805debb2f\AndroidManifest.xml:16:5-18:41
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0-alpha] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\MPAndroidChart-v3.1.0-alpha.aar\5b4b1cfbf235150b1aa010c805debb2f\AndroidManifest.xml:16:5-18:41
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\a8978aa22c5aa2cef644242b38b89824\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\a8978aa22c5aa2cef644242b38b89824\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\0dd9f3c1f14649ba8fdaa2a68b3f72fa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\0dd9f3c1f14649ba8fdaa2a68b3f72fa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\8c914e816083d0acbb01b9c72ca87fe1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\8c914e816083d0acbb01b9c72ca87fe1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\46aa9d0136a605f409393305270a2667\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\46aa9d0136a605f409393305270a2667\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\9287e017ce05621869d321a8369f24eb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\9287e017ce05621869d321a8369f24eb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\12a75f0ce4babb95d92d960fcd130fbe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\12a75f0ce4babb95d92d960fcd130fbe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\5de08263c87915fc10fc0927b9b355a0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\5de08263c87915fc10fc0927b9b355a0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\56c63aa475dcd5f71552ac45b0a4f274\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\56c63aa475dcd5f71552ac45b0a4f274\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\c2231b55e52a7bf97beeedb2ddaf9489\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\c2231b55e52a7bf97beeedb2ddaf9489\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\0528e21901300e2d071dc9a1b5252e5f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\0528e21901300e2d071dc9a1b5252e5f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\ca76ef6f6168cd70cb6fef265582ef0a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\ca76ef6f6168cd70cb6fef265582ef0a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\b5c42d3db2201a2c4b3cc9523b009cf0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\b5c42d3db2201a2c4b3cc9523b009cf0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\73ced9bcc8627d68e650742de7ff73fe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\73ced9bcc8627d68e650742de7ff73fe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\0e0165e7da7cd1804fe77bfd28f40ab7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\0e0165e7da7cd1804fe77bfd28f40ab7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\77f284ba9c0f670d4304ff385bc37ffa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\77f284ba9c0f670d4304ff385bc37ffa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\2982d5585562e892e10b3855d14dd628\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\2982d5585562e892e10b3855d14dd628\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\917b24c92840eb743096f7e090005cd7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\917b24c92840eb743096f7e090005cd7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\6738eae72f1dc94b8e8866386e8cdffd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\6738eae72f1dc94b8e8866386e8cdffd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\bbaccb682468061599493483eb7f4e65\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\bbaccb682468061599493483eb7f4e65\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0d50f1f8a50706ec3acd190f62b185aa\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0d50f1f8a50706ec3acd190f62b185aa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\277f90f21a1432b2442c94a20e3227a3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\277f90f21a1432b2442c94a20e3227a3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\4b59a3edd9d3ed712dbcc786c2337c33\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\4b59a3edd9d3ed712dbcc786c2337c33\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\3b5ea31720be4019c2432d4a5ffcc12b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\3b5ea31720be4019c2432d4a5ffcc12b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\bfb3bcdbcfcfa368054a53fa53187454\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\bfb3bcdbcfcfa368054a53fa53187454\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\c6a2aae186670cc7f2aadf11e94ba138\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\c6a2aae186670cc7f2aadf11e94ba138\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\b795d03f7a6b9491a662c3a6cd86e345\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\b795d03f7a6b9491a662c3a6cd86e345\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\1d396be06f8d43f6ff371771f6881ed2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\1d396be06f8d43f6ff371771f6881ed2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\e3ce58c0aa09d77b544f420200e8d13e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Vivek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\e3ce58c0aa09d77b544f420200e8d13e\AndroidManifest.xml:20:5-44
+INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml
+INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml
+		ADDED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Real Variable Data\Android\SupplyChain\app\src\main\AndroidManifest.xml
