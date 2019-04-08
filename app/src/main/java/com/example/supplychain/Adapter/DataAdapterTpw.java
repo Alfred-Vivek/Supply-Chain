@@ -36,6 +36,7 @@ import java.util.Map;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+
 public class DataAdapterTpw extends RecyclerView.Adapter<DataAdapterTpw.ViewHolder> {
     private ArrayList<TpwModel> details;
     public List<TpwpackageData> tpwpackageData;
