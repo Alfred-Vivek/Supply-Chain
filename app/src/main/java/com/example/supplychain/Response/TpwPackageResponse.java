@@ -10,6 +10,15 @@ public class TpwPackageResponse implements Serializable {
     List <TpwpackageData> tpwpackageData;
     @SerializedName("status")
     String Status;
+    @SerializedName("message")
+    String message;
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
 
     public List<TpwpackageData> getTpwpackageData() {
         return tpwpackageData;

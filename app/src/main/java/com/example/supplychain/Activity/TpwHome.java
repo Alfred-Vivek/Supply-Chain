@@ -3,6 +3,8 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +15,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.supplychain.Adapter.DataAdapterTpw;
 import com.example.supplychain.Pojo.TpwModel;
@@ -37,6 +41,7 @@ public class TpwHome extends AppCompatActivity {
     ApiInterface apiServices;
     TpwPackageResponse tpwPackageResponse;
     SwipeRefreshLayout srl;
+    TextView msgTV;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,6 +62,7 @@ public class TpwHome extends AppCompatActivity {
                 loadTpwApi();
             }
         });
+        msgTV = findViewById(R.id.msgTV);
         loadTpwApi();
     }
     public void loadTpwApi() {
@@ -71,10 +77,17 @@ public class TpwHome extends AppCompatActivity {
             public void onResponse(Call<TpwPackageResponse> call, Response<TpwPackageResponse> response) {
                 progressDialog.dismiss();
                 srl.setRefreshing(false);
-                tpwPackageResponse = response.body();
-                tpwpackageData = tpwPackageResponse.getTpwpackageData();
-                if(tpwPackageResponse !=null)
-                    initViews("");
+                if(response.body().getStatus().equalsIgnoreCase("fail"))
+                {
+                    msgTV.setVisibility(View.VISIBLE);
+                    msgTV.setText(response.body().getMessage());
+                }
+                else {
+                    tpwPackageResponse = response.body();
+                    tpwpackageData = tpwPackageResponse.getTpwpackageData();
+                    if(tpwPackageResponse !=null)
+                        initViews("");
+                }
             }
             @Override
             public void onFailure(Call<TpwPackageResponse> call, Throwable t) {
@@ -98,6 +111,45 @@ public class TpwHome extends AppCompatActivity {
             }
         });
     }
+    public void initViews(String search) {
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
+        recyclerView.setLayoutManager(layoutManager);
+        details = new ArrayList<TpwModel>();
+        List<TpwpackageData> pd = tpwPackageResponse.getTpwpackageData();
+        List <TpwpackageData> newpd = new ArrayList<>();
+        if(search.equalsIgnoreCase(""))
+        {
+            for(int i=0; i<pd.size(); i++ )
+            {
+                TpwModel m = new TpwModel(pd.get(i).getAwbNumber(),pd.get(i).getShiptoLocationAddress(),pd.get(i).getTotalQuantity(),pd.get(i).getTotalLength(),pd.get(i).getTotalwidth(),pd.get(i).getTotalHeight(),"Open");
+                details.add(m);
+                newpd.add(pd.get(i));
+            }
+        }
+        else
+        {
+            for(int i=0; i<pd.size(); i++ )
+            {
+                if(pd.get(i).getAwbNumber().toLowerCase().contains(search.toLowerCase()))
+                {
+                    TpwModel m = new TpwModel(pd.get(i).getAwbNumber(),pd.get(i).getShiptoLocationAddress(),pd.get(i).getTotalQuantity(),pd.get(i).getTotalLength(),pd.get(i).getTotalwidth(),pd.get(i).getTotalHeight(),"Open");
+                    details.add(m);
+                    newpd.add(pd.get(i));
+                }
+            }
+        }
+        if (details.size() == 0)
+        {
+            msgTV.setVisibility(View.VISIBLE);
+            msgTV.setText("No Shipments for the day");
+        }
+        RecyclerView.Adapter adapter = new DataAdapterTpw(this,details,newpd,0);
+        recyclerView.setAdapter(adapter);
+    }
+    @Override
+    public void onBackPressed() {TpwHome.this.finishAffinity();  }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.tpw_home, menu);
@@ -128,36 +180,5 @@ public class TpwHome extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-    public void initViews(String search) {
-        RecyclerView recyclerView = findViewById(R.id.recyclerView);
-        recyclerView.setHasFixedSize(true);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
-        recyclerView.setLayoutManager(layoutManager);
-        details = new ArrayList<TpwModel>();
-        List<TpwpackageData> pd = tpwPackageResponse.getTpwpackageData();
-        List <TpwpackageData> newpd = new ArrayList<>();
-        if(search.equalsIgnoreCase(""))
-        {
-            for(int i=0; i<pd.size(); i++ )
-            {
-                TpwModel m = new TpwModel(pd.get(i).getAwbNumber(),pd.get(i).getShiptoLocationAddress(),pd.get(i).getTotalQuantity(),pd.get(i).getTotalLength(),pd.get(i).getTotalwidth(),pd.get(i).getTotalHeight(),"Open");
-                    details.add(m);
-                    newpd.add(pd.get(i));
-            }
-        }
-        else
-        {
-            for(int i=0; i<pd.size(); i++ )
-            {
-                if(pd.get(i).getAwbNumber().toLowerCase().contains(search.toLowerCase()))
-                {
-                    TpwModel m = new TpwModel(pd.get(i).getAwbNumber(),pd.get(i).getShiptoLocationAddress(),pd.get(i).getTotalQuantity(),pd.get(i).getTotalLength(),pd.get(i).getTotalwidth(),pd.get(i).getTotalHeight(),"Open");
-                        details.add(m);
-                        newpd.add(pd.get(i));
-                }
-            }
-        }
-        RecyclerView.Adapter adapter = new DataAdapterTpw(this,details,newpd,0);
-        recyclerView.setAdapter(adapter);
-    }
+
 }

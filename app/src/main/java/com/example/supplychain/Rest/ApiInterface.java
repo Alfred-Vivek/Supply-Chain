@@ -17,7 +17,7 @@ import retrofit2.http.Query;
 
 public interface ApiInterface {
     @FormUrlEncoded
-    @POST("auth/login")
+    @POST("auth/login/")
     Call<LoginResponse> sendLoginDetails(@FieldMap Map<String, String> map);
 
     @GET("logistic/listofawbs/")

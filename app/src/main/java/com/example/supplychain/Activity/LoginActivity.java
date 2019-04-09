@@ -89,7 +89,6 @@ ProgressDialog progressDialog;
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
                 progressDialog.dismiss();
-                Log.i("Login_Response",response.toString());
                 if(response.code() == 200){
                     if(response.body().getStatus().equalsIgnoreCase("success")){ ;
                         LoginResponse loginResponse = response.body();

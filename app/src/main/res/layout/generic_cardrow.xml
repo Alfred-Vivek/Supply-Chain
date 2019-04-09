@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,40 +7,47 @@
     android:layout_marginRight="8dp"
     android:layout_marginTop="20dp"
     android:elevation="10dp"
-    app:cardCornerRadius="6dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cardCornerRadius="6dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/titleTV"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            android:clickable="true"
+            android:background="@color/colorPrimary">
+            <TextView
+                android:id="@+id/awbTV"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="7dp"
-                android:background="@color/colorPrimary">
-                <TextView
-                    android:id="@+id/awbTV"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/droidsans"
-                    android:textStyle="bold"
-                    android:textColor="#FFFFFF"
-                    android:layout_weight="1"
-                    android:textSize="17dp"
-                    android:text="AWB No. :" />
-                <TextView
-                    android:id="@+id/quantityTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="15dp"
-                    android:text="Quantity:"
-                    android:textColor="#FFFFFF"
-                    android:fontFamily="@font/droidsans"
-                    android:layout_gravity="right"
-                    android:textStyle="bold"/>
-            </LinearLayout>
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:fontFamily="@font/droidsans"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:textSize="17dp"
+                android:text="AWB No. :"/>
+            <TextView
+                android:id="@+id/quantityTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Quantity:"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/droidsans"
+                android:layout_gravity="right"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/showLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -69,7 +76,7 @@
                     android:fontFamily="@font/droidsans"
                     android:text="Height : "/>
             </LinearLayout>
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -88,7 +95,7 @@
                     android:layout_marginTop="5dp"
                     android:background="#999999" />
             </LinearLayout>
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -101,29 +108,53 @@
                     android:fontFamily="@font/droidsans"
                     android:textStyle="bold"
                     android:textSize="15dp"
-                    android:text="Status:OPEN"/>
-                <TextView
-                    android:id="@+id/pdTV"
+                    android:text="Status OPEN"/>
+                <LinearLayout
+                    android:id="@+id/pdLL"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:textSize="15dp"
+                    android:layout_marginLeft="30dp"
                     android:clickable="true"
-                    android:text="@string/pd"
-                    android:fontFamily="@font/droidsans_bold"
-                    android:textColor="#1C7BCE"/>
-                <TextView
-                    android:id="@+id/bolTV"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/ic_info_outline_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:textSize="15dp"
+                        android:duplicateParentState="true"
+                        android:text="@string/pd"
+                        android:fontFamily="@font/droidsans_bold"
+                        android:textColor="#1C7BCE"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/bolLL"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:textSize="15dp"
+                    android:layout_marginLeft="30dp"
                     android:clickable="true"
-                    android:text="@string/bol"
-                    android:fontFamily="@font/droidsans_bold"
-                    android:textColor="#1C7BCE"/>
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/ic_file_download_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:textSize="15dp"
+                        android:duplicateParentState="true"
+                        android:text="@string/bol"
+                        android:fontFamily="@font/droidsans_bold"
+                        android:textColor="#1C7BCE"/>
+                </LinearLayout>
             </LinearLayout>
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -150,4 +181,5 @@
                     android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
+    </LinearLayout>
     </android.support.v7.widget.CardView>

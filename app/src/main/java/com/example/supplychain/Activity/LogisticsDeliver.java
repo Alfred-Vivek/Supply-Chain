@@ -44,7 +44,7 @@ public class LogisticsDeliver extends AppCompatActivity implements NavigationVie
     ProgressDialog progressDialog;
     ApiInterface apiServices;
     LogisticPackageResponse logisticPackageResponse;
-    TextView nameTV,emailTV;
+    TextView nameTV,emailTV,dpTV,msgTV;
     SwipeRefreshLayout srl;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +66,7 @@ public class LogisticsDeliver extends AppCompatActivity implements NavigationVie
                 loadPackageApi();
             }
         });
+        msgTV = findViewById(R.id.msgTV);
         loadPackageApi();
         Calendar startDate = Calendar.getInstance();
         startDate.add(Calendar.MONTH, -1);
@@ -92,6 +93,15 @@ public class LogisticsDeliver extends AppCompatActivity implements NavigationVie
         emailTV.setText(PrefUtils.getFromPrefs(this,PrefUtils.user_email,""));
         nameTV = header.findViewById(R.id.nameTV);
         nameTV.setText("Welcome "+PrefUtils.getFromPrefs(this,PrefUtils.user_name,""));
+        dpTV = header.findViewById(R.id.dpTV);
+        String x = PrefUtils.getFromPrefs(this,PrefUtils.user_name,"");
+        String[] myName = x.split(" ");
+        String dp="";
+        for (int i = 0; i < myName.length; i++) {
+            String s = myName[i].charAt(0)+"";
+            dp = dp +s;
+        }
+        dpTV.setText(dp);
     }
     public void loadPackageApi() {
         progressDialog = new ProgressDialog(this);
@@ -106,10 +116,17 @@ public class LogisticsDeliver extends AppCompatActivity implements NavigationVie
             public void onResponse(Call<LogisticPackageResponse> call, Response<LogisticPackageResponse> response) {
                 progressDialog.dismiss();
                 srl.setRefreshing(false);
-                logisticPackageResponse = response.body();
-                logisticPackageData = logisticPackageResponse.getLogisticPackageData();
-                if(logisticPackageResponse !=null)
-                    initViews("");
+                if(response.body().getStatus().equalsIgnoreCase("fail"))
+                {
+                    msgTV.setVisibility(View.VISIBLE);
+                    msgTV.setText(response.body().getMessage());
+                }
+                else {
+                    logisticPackageResponse = response.body();
+                    logisticPackageData = logisticPackageResponse.getLogisticPackageData();
+                    if(logisticPackageResponse !=null)
+                        initViews("");
+                }
             }
             @Override
             public void onFailure(Call<LogisticPackageResponse> call, Throwable t) {
@@ -180,6 +197,11 @@ public class LogisticsDeliver extends AppCompatActivity implements NavigationVie
                     }
                 }
             }
+        }
+        if (details.size() == 0)
+        {
+            msgTV.setVisibility(View.VISIBLE);
+            msgTV.setText("No Deliveries for the day");
         }
         RecyclerView.Adapter adapter = new DataAdapterLogistics(LogisticsDeliver.this,details,newpd,2);
         recyclerView.setAdapter(adapter);

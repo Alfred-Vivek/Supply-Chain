@@ -43,7 +43,7 @@ import retrofit2.Response;
 
 public class LogisticsHome extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private ArrayList<LogisticsModel> details;
-    TextView nameTV, emailTV;
+    TextView nameTV, emailTV, dpTV,msgTV;
     private ApiInterface apiServices;
     LogisticPackageResponse logisticPackageResponse;
     ProgressDialog progressDialog;
@@ -89,12 +89,22 @@ public class LogisticsHome extends AppCompatActivity implements NavigationView.O
         emailTV.setText(PrefUtils.getFromPrefs(this,PrefUtils.user_email,""));
         nameTV = header.findViewById(R.id.nameTV);
         nameTV.setText("Welcome "+PrefUtils.getFromPrefs(this,PrefUtils.user_name,""));
+        dpTV = header.findViewById(R.id.dpTV);
+        String x = PrefUtils.getFromPrefs(this,PrefUtils.user_name,"");
+        String[] myName = x.split(" ");
+        String dp="";
+        for (int i = 0; i < myName.length; i++) {
+            String s = myName[i].charAt(0)+"";
+            dp = dp +s;
+        }
+        dpTV.setText(dp);
     }
     public void loadPackageApi() {
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Loading...");
         progressDialog.setCancelable(false);
         progressDialog.show();
+        msgTV = findViewById(R.id.msgTV);
         String dcorg = PrefUtils.getFromPrefs(getApplicationContext(), PrefUtils.user_dcorg,"");
         apiServices = ApiClient.getPackageClient().create(ApiInterface.class);
         Call<LogisticPackageResponse> call = apiServices.getPackage(dcorg);
@@ -103,10 +113,17 @@ public class LogisticsHome extends AppCompatActivity implements NavigationView.O
         public void onResponse(Call<LogisticPackageResponse> call, Response<LogisticPackageResponse> response) {
             progressDialog.dismiss();
             srl.setRefreshing(false);
-            logisticPackageResponse = response.body();
-            List <LogisticPackageData>pd = logisticPackageResponse.getLogisticPackageData();
-            if(!logisticPackageResponse.getStatus().equalsIgnoreCase("fail"))
-                initViews("");
+            if(response.body().getStatus().equalsIgnoreCase("fail"))
+            {
+                msgTV.setVisibility(View.VISIBLE);
+                msgTV.setText(response.body().getMessage());
+            }
+            else {
+                logisticPackageResponse = response.body();
+                List <LogisticPackageData>pd = logisticPackageResponse.getLogisticPackageData();
+                if(logisticPackageResponse !=null)
+                    initViews("");
+            }
         }
         @Override
         public void onFailure(Call<LogisticPackageResponse> call, Throwable t) {
@@ -165,8 +182,14 @@ public class LogisticsHome extends AppCompatActivity implements NavigationView.O
                 }
             }
         }
+        if (details.size() == 0)
+        {
+            msgTV.setVisibility(View.VISIBLE);
+            msgTV.setText("No Shipments for the day");
+        }
         RecyclerView.Adapter adapter = new DataAdapterLogistics(LogisticsHome.this,details,newpd,0);
         recyclerView.setAdapter(adapter);
+//        recyclerView.smoothScrollToPosition(pd.size());
     }
     @Override
     public void onBackPressed() {

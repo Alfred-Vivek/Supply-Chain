@@ -1050,13 +1050,16 @@ drawable ic_arrow_downward_black
 drawable ic_arrow_upward_black
 drawable ic_circle_white_8dp
 drawable ic_done_black_24dp
+drawable ic_file_download_black_24dp
 drawable ic_home_black
+drawable ic_info_outline_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_place
+drawable ic_profile_bc
 drawable ic_timeline
 drawable marker
 drawable mtrl_snackbar_background
@@ -1132,6 +1135,7 @@ id barchart
 id barrier
 id beginning
 id blocking
+id bolLL
 id bolTV
 id bottom
 id buttonPanel
@@ -1165,6 +1169,7 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id dpTV
 id drawer_layout
 id edit_query
 id emailET
@@ -1200,7 +1205,6 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageView
 id info
 id invisible
 id italic
@@ -1226,6 +1230,7 @@ id message
 id mi_search
 id middle
 id mini
+id msgTV
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
@@ -1250,7 +1255,7 @@ id parentPanel
 id parent_matrix
 id passwordET
 id pdBT
-id pdTV
+id pdLL
 id percent
 id pin
 id progress_circular
@@ -1290,6 +1295,7 @@ id selected
 id shortcut
 id showCustom
 id showHome
+id showLL
 id showTitle
 id smallLabel
 id snackbar_action
@@ -1339,6 +1345,7 @@ id tit5
 id tit6
 id title
 id titleDividerNoCustom
+id titleTV
 id title_template
 id toolbar
 id top

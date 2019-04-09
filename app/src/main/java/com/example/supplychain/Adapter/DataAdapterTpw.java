@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -56,7 +57,7 @@ public class DataAdapterTpw extends RecyclerView.Adapter<DataAdapterTpw.ViewHold
         return new ViewHolder(view);
     }
     @Override
-    public void onBindViewHolder(ViewHolder viewHolder, final int i) {
+    public void onBindViewHolder(final ViewHolder viewHolder, final int i) {
         viewHolder.awbTV.setText(details.get(i).getAwb());
         String add = "<b>Address : </b>"+details.get(i).getAddress();
         viewHolder.addressTV.setText(Html.fromHtml(add));
@@ -68,7 +69,7 @@ public class DataAdapterTpw extends RecyclerView.Adapter<DataAdapterTpw.ViewHold
         String ht = "<b>Height : </b>"+details.get(i).getHeight();
         viewHolder.heightTV.setText(Html.fromHtml(ht));
         viewHolder.statusTV.setText(details.get(i).getStatus());
-        if (details.get(i).getStatus().equalsIgnoreCase("Status : OPEN")) {
+        if (details.get(i).getStatus().equalsIgnoreCase("Status OPEN")) {
             viewHolder.statusTV.setTextColor(Color.rgb(0, 200, 0));
         } else {
             viewHolder.statusTV.setTextColor(Color.rgb(200, 0, 0));
@@ -94,6 +95,17 @@ public class DataAdapterTpw extends RecyclerView.Adapter<DataAdapterTpw.ViewHold
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 v.getContext().startActivity(i);
+            }
+        });
+        viewHolder.titleTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(viewHolder.showLL.getVisibility() == View.VISIBLE){
+                    viewHolder.showLL.setVisibility(View.GONE);
+                }
+                else{
+                    viewHolder.showLL.setVisibility(View.VISIBLE);
+                }
             }
         });
         if (activity == 1) {
@@ -149,10 +161,12 @@ public class DataAdapterTpw extends RecyclerView.Adapter<DataAdapterTpw.ViewHold
         private TextView widthTV;
         private TextView heightTV;
         private TextView statusTV;
-        private TextView package_details;
-        private TextView bol;
+        private LinearLayout package_details;
+        private LinearLayout bol;
         private Button accept;
         private Button reject;
+        private LinearLayout titleTV;
+        private LinearLayout showLL;
 
         public ViewHolder(View view) {
             super(view);
@@ -163,10 +177,12 @@ public class DataAdapterTpw extends RecyclerView.Adapter<DataAdapterTpw.ViewHold
             widthTV = view.findViewById(R.id.widthTV);
             heightTV = view.findViewById(R.id.heightTV);
             statusTV = view.findViewById(R.id.statusTV);
-            package_details = view.findViewById(R.id.pdTV);
-            bol = view.findViewById(R.id.bolTV);
+            package_details = view.findViewById(R.id.pdLL);
+            bol = view.findViewById(R.id.bolLL);
             accept = view.findViewById(R.id.acceptBT);
             reject = view.findViewById(R.id.rejectBT);
+            titleTV = view.findViewById(R.id.titleTV);
+            showLL = view.findViewById(R.id.showLL);
         }
     }
     public void sendtoserver(int i) {

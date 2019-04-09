@@ -3,8 +3,8 @@
     <string name="title_activity_tpw_login">TPW Login</string>
     <string name="title_activity_login">Login to Account</string>
     <string name="title_activity_tpw_home">TPW Home</string>
-    <string name="bol"><u>Bol Copy</u></string>
-    <string name="pd"><u>Packing Details</u></string>
+    <string name="bol">BOL</string>
+    <string name="pd">More Info</string>
     <string name="title_activity_logistics_home">Logistics Home</string>
     <string name="title_activity_logistics_pickup">Logistics Pickup</string>
     <string name="title_activity_logistics_deliver">Logistics Deliver</string>
