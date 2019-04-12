@@ -3,7 +3,6 @@
     package="com.example.supplychain">
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +10,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme"
         android:networkSecurityConfig="@xml/network_config">
-
         <activity
             android:name=".Activity.SplashScreen"
             android:screenOrientation="portrait"
@@ -21,66 +19,55 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Activity.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-
         <activity
             android:name=".Activity.LogisticsHome"
             android:label="@string/title_activity_logistics_home"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-
         <activity
             android:name=".Activity.TpwHome"
             android:label="@string/title_activity_tpw_home"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-
         <activity
             android:name=".Activity.LogisticsDeliver"
             android:label="@string/title_activity_logistics_deliver"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-
         <activity
             android:name=".Activity.LogisticsPickup"
             android:label="@string/title_activity_logistics_pickup"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-
         <activity
             android:name=".Activity.PackagingDetails"
             android:label="Package Details"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Activity.ShipmentTrack"
             android:label="@string/title_activity_shipment_track"
             android:theme="@style/AppTheme.NoActionBar"/>
-
         <activity
             android:name=".Activity.DealerDash"
             android:label="@string/title_activity_dealer_dash"
             android:theme="@style/MyMaterialTheme" />
-
         <activity
             android:name=".Activity.ShipmentDetails"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Activity.AwbTrack"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
-
 </manifest>
