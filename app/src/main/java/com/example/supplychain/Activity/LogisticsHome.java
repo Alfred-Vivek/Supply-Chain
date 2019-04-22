@@ -182,14 +182,13 @@ public class LogisticsHome extends AppCompatActivity implements NavigationView.O
                 }
             }
         }
-        if (details.size() == 0)
-        {
-            msgTV.setVisibility(View.VISIBLE);
-            msgTV.setText("No Shipments for the day");
-        }
+//        if (details.size() == 0)
+//        {
+//            msgTV.setVisibility(View.VISIBLE);
+//            msgTV.setText("No Shipments for the day");
+//        }
         RecyclerView.Adapter adapter = new DataAdapterLogistics(LogisticsHome.this,details,newpd,0);
         recyclerView.setAdapter(adapter);
-//        recyclerView.smoothScrollToPosition(pd.size());
     }
     @Override
     public void onBackPressed() {
